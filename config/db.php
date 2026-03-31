@@ -1,11 +1,16 @@
 <?php
 
 require_once __DIR__ . '/app.php';
+require_once __DIR__ . '/env.php';
 
-$host = 'localhost';
-$dbname = 'freelancer_app';
-$username = 'root';
-$password = '';
+$host = getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('DB_NAME') ?: 'freelancer_app';
+$username = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASS');
+
+if ($password === false) {
+    $password = '';
+}
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
@@ -37,12 +42,12 @@ set_exception_handler(function (Throwable $exception) {
                             <h1 class="h3 mb-3">The page could not be loaded</h1>
                             <p class="text-muted mb-4"><?php echo htmlspecialchars($message); ?></p>
                             <div class="alert alert-secondary mb-4">
-                                Check that your database exists and that [database.sql] has been imported into `freelancer_app`.
+                                Check your database settings and make sure [database.sql] has been imported into the configured database.
                             </div>
                             <a href="<?php echo BASE_URL; ?>/index.php" class="btn btn-primary">Back to App</a>
                         </div>
                     </div>
-                        </div>
+                </div>
             </div>
         </div>
     </body>

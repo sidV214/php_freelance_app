@@ -2,3 +2,12 @@
 !/uploads/.gitkeep
 .vscode/
 *.log
+.env
+.env.*
+!.env.example
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.cache

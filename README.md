@@ -6,9 +6,11 @@ Mini freelancing-style CRUD web application built with core PHP, MySQL, and Boot
 
 1. Place the project inside `C:\xampp\htdocs\php_freelance_app`
 2. Start Apache and MySQL from XAMPP
-3. Create/import the database using [database.sql](c:\xampp\htdocs\php_freelance_app\database.sql)
-4. Confirm database settings in [config/db.php](c:\xampp\htdocs\php_freelance_app\config\db.php)
-5. Open `http://localhost/php_freelance_app/`
+3. Copy `.env.example` to `.env`
+4. Set your database values in `.env`
+5. Create/import the database using [database.sql](c:\xampp\htdocs\php_freelance_app\database.sql)
+6. The app reads DB settings from environment variables in [db.php](c:\xampp\htdocs\php_freelance_app\config\db.php)
+7. Open `http://localhost/php_freelance_app/`
 
 ## Main URLs
 
