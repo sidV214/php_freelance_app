@@ -44,6 +44,84 @@ php_freelance_app/
 └── README.md
 ```
 
+## Screenshots
+
+### Login Page
+
+This screen shows the authentication entry point of the app.
+
+Functionality shown:
+
+- user login with email and password
+- link to the register page
+- clean landing layout for authentication
+
+![Login Page](assets/readme/login.png)
+
+### Dashboard / Home Page
+
+This screen shows the protected dashboard after login.
+
+Functionality shown:
+
+- quick access to post requirement
+- quick access to view works
+- quick access to profile
+- logout option
+
+![Dashboard Page](assets/readme/dashboard.png)
+
+### Post Requirement Page
+
+This screen is used to create a new work requirement.
+
+Functionality shown:
+
+- create a new requirement post
+- title input field
+- description input field
+- submit requirement button
+
+![Post Requirement Page](assets/readme/post-requirement.png)
+
+### View Works Page
+
+This screen lists all posted works.
+
+Functionality shown:
+
+- search by title or description
+- display all works with title and description
+- edit and delete buttons for the logged-in user's own posts
+- pagination-ready works listing
+
+![View Works Page](assets/readme/view-works.png)
+
+### Delete Confirmation
+
+This screen shows the delete confirmation popup for a work item.
+
+Functionality shown:
+
+- confirmation before deleting a post
+- protects against accidental delete actions
+- delete action is limited to the logged-in user's own posts
+
+![Delete Confirmation](assets/readme/delete-confirmation.png)
+
+### Profile Page
+
+This screen shows user profile management.
+
+Functionality shown:
+
+- user account summary
+- profile image upload
+- change password form
+- account information display
+
+![Profile Page](assets/readme/profile.png)
+
 ## Full Setup Process
 
 ### 1. Download and Install XAMPP
