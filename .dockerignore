@@ -1,0 +1,7 @@
+.git
+.gitignore
+.env
+/uploads/*
+!/uploads/.gitkeep
+node_modules
+vendor
